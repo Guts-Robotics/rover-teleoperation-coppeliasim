@@ -1,5 +1,7 @@
 # Teleoperation Simulation Environment for a Curiosity-Inspired Rover
 
+![Rover in operation](docs/images/rover_operacao.png)
+
 A simulation environment for teleoperating a rover inspired by NASA's **Curiosity** (Mars Science Laboratory), built with **CoppeliaSim** and a **Python** API. The system enables remote control of the rover's locomotion and robotic manipulator via a joystick (Xbox One controller), with data logging and analysis of the dynamic behavior across different simulated scenarios.
 
 Undergraduate Thesis (TCC) — Mechatronics Engineering, Federal University of São João del-Rei (UFSJ).
@@ -66,6 +68,9 @@ The rover is composed of the following subsystems, organized hierarchically from
 - **Wheels** — traction joints with velocity control;
 - **Robotic manipulator** — 4 degrees of freedom (`joint_mani_p1`, `p2`, `p3`, `tool`), with dynamic position control.
 
+![Robotic manipulator in operation](docs/images/manipulador_operacao.jpeg)
+*Figure: robotic manipulator in operation in the virtual scenario.*
+
 ### Operation modes (Xbox One controller)
 
 **Locomotion mode:**
@@ -97,6 +102,9 @@ Top center button → toggles between the two modes.
 - Average communication latency of **6 ms** (local execution);
 - Coherent behavior of the rocker-bogie suspension and the robotic manipulator on flat and irregular terrain;
 - **Comparison between physics engines** (Bullet 2.78, Bullet 2.83, ODE, and Newton): the choice of engine primarily affects locomotion (sliding, suspension deformation, wheel locking), with no perceptible effect on the manipulator. **ODE** and **Newton** delivered the best performance, with ODE showing a slight edge on irregular terrain.
+
+![Rover on irregular terrain](docs/images/terreno_irregular.png)
+*Figure: rover navigating irregular terrain during validation tests.*
 
 Comparative video of the rover's performance across the evaluated physics engines: [youtu.be/LFJZ8wvNDwA](https://youtu.be/LFJZ8wvNDwA?si=kjcsSZdWWTaLPe5N)
 
@@ -195,7 +203,7 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 7. **Run the control API**
 ```bash
-   python src/control_api.py
+   python src/main.py
 ```
 
 8. **Control the rover**
@@ -219,15 +227,7 @@ The full reference list is available in the complete thesis (TCC) document.
 
 ## 📄 Full document
 
-The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — is available here: [TCC_Gustavo_Spoti_Costa.pdf](docs/TCC_Gustavo_Spoti_Costa.pdf).
-
----
-
-## 📖 Citation
-
-If you use this work, please cite:
-
-Costa, G. S. *Desenvolvimento e Validação de um Ambiente de Simulação para Teleoperação de um Rover Inspirado no Curiosity Utilizando CoppeliaSim e Python*. Undergraduate Thesis, Federal University of São João del-Rei, 2026.
+The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — is available here: [TCC_Gustavo Spoti Costa.pdf](docs/TCC_Gustavo%20Spoti%20Costa.pdf).
 
 ---
 
