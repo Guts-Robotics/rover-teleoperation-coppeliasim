@@ -140,4 +140,4 @@ The complete TCC report — including detailed methodology, algorithms, joint co
 
 ## 📝 License
 
-*(add the repository license here, e.g. MIT, if you wish to make the code publicly available)*
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
