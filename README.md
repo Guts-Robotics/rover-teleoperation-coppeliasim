@@ -135,12 +135,12 @@ Comparative video of the rover's performance across the evaluated physics engine
 1. **Clone this repository**
 ```bash
    git clone https://github.com/Guts-Robotics/rover-teleoperation-coppeliasim.git
-   cd your-repo-name
+   cd rover-teleoperation-coppeliasim
 ```
 
 2. **Install the Python libraries**
 
-   All required libraries are listed in `requirements.txt`. Install them all at once with:
+   All required libraries are listed in [`requirements.txt`](requirements.txt). Install them all at once with:
 ```bash
    pip install -r requirements.txt
 ```
@@ -164,9 +164,11 @@ Comparative video of the rover's performance across the evaluated physics engine
       - macOS: `/Applications/coppeliaSim.app/`
 
    2. Navigate to:
-       programming/legacyRemoteApi/remoteApiBindings/
-   
-   3. Copy the following files into this project's `src/` folder:
+```
+      programming/legacyRemoteApi/remoteApiBindings/
+```
+
+   3. Copy the following files into this project's [`src/`](src/) folder:
       - `python/python/sim.py`
       - `python/python/simConst.py`
       - The compiled library for your operating system, found in `lib/lib/<your-platform>/`:
@@ -181,7 +183,7 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 4. **Open the scene in CoppeliaSim**
 
-   Launch CoppeliaSim and open the rover scene file provided in this repository.
+   Launch CoppeliaSim and open the rover scene file provided in this repository: [`scenes/rover_scene.ttt`](scenes/rover_scene.ttt).
 
 5. **Enable the Remote API server on the scene**
 
@@ -193,7 +195,7 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 7. **Run the control API**
 ```bash
-   python src/main.py
+   python src/control_api.py
 ```
 
 8. **Control the rover**
@@ -217,7 +219,7 @@ The full reference list is available in the complete thesis (TCC) document.
 
 ## 📄 Full document
 
-The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — [TCC_Gustavo_Spoti_Costa.pdf](docs/TCC_Gustavo_Spoti_Costa.pdf).
+The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — is available here: [TCC_Gustavo_Spoti_Costa.pdf](docs/TCC_Gustavo_Spoti_Costa.pdf).
 
 ---
 
