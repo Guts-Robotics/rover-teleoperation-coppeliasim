@@ -134,7 +134,7 @@ The full reference list is available in the complete thesis (TCC) document.
 
 ## 📄 Full document
 
-The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — is available in this repository.
+The complete TCC report — including detailed methodology, algorithms, joint configuration tables, and full results — [TCC_Gustavo_Spoti_Costa.pdf](docs/TCC_Gustavo_Spoti_Costa.pdf).
 
 ---
 
