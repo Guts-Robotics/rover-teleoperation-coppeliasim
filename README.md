@@ -231,6 +231,14 @@ The complete TCC report — including detailed methodology, algorithms, joint co
 
 ---
 
+## 📖 Citation
+
+If you use this work, please cite:
+
+Costa, G. S. *Desenvolvimento e Validação de um Ambiente de Simulação para Teleoperação de um Rover Inspirado no Curiosity Utilizando CoppeliaSim e Python*. Undergraduate Thesis, Federal University of São João del-Rei, 2026.
+
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
