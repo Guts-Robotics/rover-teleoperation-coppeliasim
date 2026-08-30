@@ -122,6 +122,89 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 ---
 
+## ▶️ How to run
+
+### Prerequisites
+
+- [CoppeliaSim](https://www.coppeliarobotics.com/) installed
+- Python 3.9+
+- An Xbox One controller (or compatible gamepad) connected to your machine
+
+### Steps
+
+1. **Clone this repository**
+```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+```
+
+2. **Install the Python libraries**
+
+   All required libraries are listed in `requirements.txt`. Install them all at once with:
+```bash
+   pip install -r requirements.txt
+```
+
+   If you prefer to install them individually:
+```bash
+   pip install pygame
+   pip install matplotlib
+   pip install numpy
+```
+
+   > **Note:** `pygame` is responsible for reading the Xbox controller inputs (analog sticks, triggers, and buttons). Make sure your controller is connected **before** running the script, otherwise `pygame` won't detect it.
+
+3. **Add the CoppeliaSim Remote API to your Python project**
+
+   This project communicates with CoppeliaSim through its **Legacy Remote API**, which is not distributed via `pip` and must be added manually:
+
+   1. Locate your CoppeliaSim installation folder. By default:
+      - Windows: `C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\`
+      - Linux: `~/CoppeliaSim/`
+      - macOS: `/Applications/coppeliaSim.app/`
+
+   2. Navigate to:
+       programming/legacyRemoteApi/remoteApiBindings/
+   
+   3. Copy the following files into this project's `src/` folder:
+      - `python/python/sim.py`
+      - `python/python/simConst.py`
+      - The compiled library for your operating system, found in `lib/lib/<your-platform>/`:
+        - Windows: `remoteApi.dll`
+        - Linux: `remoteApi.so`
+        - macOS: `remoteApi.dylib`
+
+   4. No `pip install` is required for these files — they just need to be in the same folder as the control script (or included in your `PYTHONPATH`). Once copied, you can import the API normally in Python:
+```python
+      import sim
+```
+
+4. **Open the scene in CoppeliaSim**
+
+   Launch CoppeliaSim and open the rover scene file provided in this repository.
+
+5. **Enable the Remote API server on the scene**
+
+   Make sure the scene has the continuous Remote API server service enabled (in CoppeliaSim: `Add > Remote API server service`, typically on port `19999`).
+
+6. **Start the simulation**
+
+   Press the play button in CoppeliaSim to start the physics simulation.
+
+7. **Run the control API**
+```bash
+   python src/main.py
+```
+
+8. **Control the rover**
+
+   - Use the **left stick** to move the rover forward/backward, and the **right stick** to steer.
+   - Press the **top center button** to switch between locomotion and manipulator mode.
+
+   See the [Operation modes](#operation-modes-xbox-one-controller) section above for the full control mapping.
+
+---
+
 ## 📚 Main references
 
 - NASA — [Curiosity Rover 3D Model](https://science.nasa.gov/resource/curiosity-rover-3d-model/)
