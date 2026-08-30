@@ -1,6 +1,6 @@
 # Teleoperation Simulation Environment for a Curiosity-Inspired Rover
 
-![Rover in operation](docs/images/rover_operacao.png)
+![Rover in operation](docs/images/rover_operacao.jpeg)
 
 A simulation environment for teleoperating a rover inspired by NASA's **Curiosity** (Mars Science Laboratory), built with **CoppeliaSim** and a **Python** API. The system enables remote control of the rover's locomotion and robotic manipulator via a joystick (Xbox One controller), with data logging and analysis of the dynamic behavior across different simulated scenarios.
 
@@ -103,7 +103,7 @@ Top center button → toggles between the two modes.
 - Coherent behavior of the rocker-bogie suspension and the robotic manipulator on flat and irregular terrain;
 - **Comparison between physics engines** (Bullet 2.78, Bullet 2.83, ODE, and Newton): the choice of engine primarily affects locomotion (sliding, suspension deformation, wheel locking), with no perceptible effect on the manipulator. **ODE** and **Newton** delivered the best performance, with ODE showing a slight edge on irregular terrain.
 
-![Rover on irregular terrain](docs/images/terreno_irregular.png)
+![Rover on irregular terrain](docs/images/terreno_irregular.jpeg)
 *Figure: rover navigating irregular terrain during validation tests.*
 
 Comparative video of the rover's performance across the evaluated physics engines: [youtu.be/LFJZ8wvNDwA](https://youtu.be/LFJZ8wvNDwA?si=kjcsSZdWWTaLPe5N)
