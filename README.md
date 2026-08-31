@@ -191,7 +191,7 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 4. **Open the scene in CoppeliaSim**
 
-   Launch CoppeliaSim and open the rover scene file provided in this repository: [`scenes/rover_scene.ttt`](scenes/rover_scene.ttt).
+   Launch CoppeliaSim and open the rover scene file provided in this repository: [`scenes/rover_scene.ttt`](scenes/curiosity_sim.ttt).
 
 5. **Enable the Remote API server on the scene**
 
@@ -203,7 +203,7 @@ Comparative video of the rover's performance across the evaluated physics engine
 
 7. **Run the control API**
 ```bash
-   python src/main.py
+   python src/control_api.py
 ```
 
 8. **Control the rover**
